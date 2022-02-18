@@ -92,7 +92,7 @@ export default function Home() {
         />
       </main>
       <div className="funko-me">
-        <Image src={funko} alt="funko" />
+        <Image className="funko-size" src={funko} alt="funko" />
       </div>
     </div>
   );

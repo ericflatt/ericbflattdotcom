@@ -46,7 +46,7 @@ export default function Home() {
             <a className="text-link" href="https://funko.com" target="blank">
               Funko
             </a>
-            . Previous experience includes design & front-end developmennt at
+            . Previous experience includes design & front-end development at
             Black Math, design & shopify development at Bobblehaus, and ux
             design intern at iCIMS. Want to talk,{" "}
             <a href="mailto:eflatt18@gmail.com" className="text-link">

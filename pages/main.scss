@@ -4,15 +4,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-html{
-  cursor: url("cursor.png"), auto;
-    height: 100%;
+html {
+  cursor: url("./images/cursor.png"), auto;
+  height: 100%;
+  overflow: hidden;
 }
 
 body {
   font-family: "Inter", sans-serif;
 }
-
 
 @media (prefers-color-scheme: light) {
   body {
@@ -97,8 +97,8 @@ body {
   }
 }
 
-.social-title{
-    margin-bottom: 8px;
+.social-title {
+  margin-bottom: 8px;
 }
 
 .tooltip {
@@ -114,7 +114,7 @@ body {
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
-  
+
   position: absolute;
   z-index: 1;
   bottom: 100%;
@@ -124,4 +124,24 @@ body {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+.emoji {
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 50%;
+  will-change: transform;
+  z-index: -1;
+  opacity: 1;
+  transition: opacity 500ms ease;
+  transition-delay: 1s;
+  &.show {
+    opacity: 0;
+  }
+}
+
+.funko-me {
+  position: absolute;
+  bottom: -180px;
+  right: 0;
 }

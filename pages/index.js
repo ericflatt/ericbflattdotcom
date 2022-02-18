@@ -1,19 +1,42 @@
 import Head from "next/head";
-// import Image from "next/image";
+import React from "react";
+import Image from "next/image";
+import funko from "../pages/images/funko-me.png";
+import Script from 'next/script'
+
 
 export default function Home() {
   return (
     <div className="container">
+      {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=UA-107339411-2"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'GA_MEASUREMENT_ID');
+        `}
+      </Script>
       <Head>
         <title>Eric Flatt</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Eric Flatt is a UX Designer currently working at Funko"
+        />
       </Head>
 
       <main className="mx-auto mt-16 max-w-container-small md:max-w-container-large md:mt-32">
-        
-        <div class="tooltip">
-        <h1 className="bread">🍞</h1>
-          <span class="tooltiptext">Why the bread? Because I'm allergic</span>
+        <div className="tooltip">
+          <h1 className="bread">🍞</h1>
+          <span className="tooltiptext">
+            Why the bread? Because I'm allergic
+          </span>
         </div>
         <h1 className="text-base">Eric Flatt</h1>
         <h2 className="text-secondary">Product Designer based in Seattle</h2>
@@ -38,16 +61,16 @@ export default function Home() {
           <a
             className="text-link"
             target="blank"
-            href="https://instagram.com/eric_flatt"
+            href="https://twitter.com/__flatt"
           >
-            Instagram
+            Twitter
           </a>
           <a
             className="text-link"
             target="blank"
-            href="https://twitter.com/__flatt"
+            href="https://instagram.com/eric_flatt"
           >
-            Twitter
+            Instagram
           </a>
           <a
             className="text-link"
@@ -61,6 +84,9 @@ export default function Home() {
           </a>
         </div>
       </main>
+      <div className="funko-me">
+          <Image src={funko} alt="funko" />
+        </div>
     </div>
   );
 }

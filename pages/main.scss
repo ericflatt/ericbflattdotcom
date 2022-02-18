@@ -46,6 +46,9 @@ body {
 
 .mt-16 {
   margin-top: 8rem;
+  @media (max-width:768px) {
+    margin-top: 4rem;
+  }
 }
 .mx-auto {
   margin-left: auto;

@@ -19,7 +19,7 @@ export default function Home() {
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'GA_MEASUREMENT_ID');
+          gtag('config', '107339411-2');
         `}
       </Script>
       <Head>

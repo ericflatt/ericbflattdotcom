@@ -1,9 +1,9 @@
 import Head from "next/head";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import funko from "../pages/images/funko-me.png";
-import Script from 'next/script'
-
+import Script from "next/script";
+import Clock from "react-live-clock";
 
 export default function Home() {
   return (
@@ -83,10 +83,17 @@ export default function Home() {
             Email
           </a>
         </div>
+        <Clock
+          className="clock"
+          format={"h:mm:ss A z"}
+          style={{ fontSize: "1rem" }}
+          ticking={true}
+          timezone={"US/Pacific"}
+        />
       </main>
       <div className="funko-me">
-          <Image src={funko} alt="funko" />
-        </div>
+        <Image src={funko} alt="funko" />
+      </div>
     </div>
   );
 }

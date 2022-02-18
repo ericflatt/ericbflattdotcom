@@ -92,6 +92,7 @@ body {
 
 .social-links {
   margin-top: 80px;
+  margin-bottom: 80px;
   a {
     margin-right: 2rem;
   }
@@ -142,6 +143,11 @@ body {
 
 .funko-me {
   position: absolute;
-  bottom: -180px;
+  bottom: -150px;
   right: 0;
+}
+
+.clock{
+  position: absolute;
+  bottom: 16px;
 }

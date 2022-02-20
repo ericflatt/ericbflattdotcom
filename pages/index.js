@@ -16,26 +16,27 @@ export default function Home() {
 
   return (
     <div className="container">
-      {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=UA-107339411-2"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', '107339411-2');
-        `}
-      </Script>
       <Head>
         <title>Eric Flatt</title>
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
           content="Eric Flatt is a UX Designer currently working at Funko"
+        />
+         <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=[UA-107339411-2]"
+        />
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '[UA-107339411-2]', { page_path: window.location.pathname });
+            `,
+          }}
         />
       </Head>
 

@@ -4,8 +4,16 @@ import Image from "next/image";
 import funko from "../pages/images/funko-me.png";
 import Script from "next/script";
 import Clock from "react-live-clock";
+// https://assets2.lottiefiles.com/packages/lf20_u4yrau.json
 
 export default function Home() {
+  useEffect(() => {
+    if (document) {
+      
+     
+    }
+  }, []);
+
   return (
     <div className="container">
       {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
@@ -32,8 +40,12 @@ export default function Home() {
       </Head>
 
       <main className="mx-auto mt-16 max-w-container-small md:max-w-container-large md:mt-32">
+      <div class="container">
+        <div class="svg hide" id="svg"></div>
+        </div>
         <div className="tooltip">
-          <h1 className="bread">🍞</h1>
+          <button className="bread">🍞</button>
+          
           <span className="tooltiptext">
             Why the bread? Because I'm allergic
           </span>

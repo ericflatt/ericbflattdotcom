@@ -4,7 +4,6 @@ import Image from "next/image";
 import funko from "../pages/images/funko-me.png";
 import Script from "next/script";
 import Clock from "react-live-clock";
-// https://assets2.lottiefiles.com/packages/lf20_u4yrau.json
 
 export default function Home() {
   useEffect(() => {
@@ -23,12 +22,12 @@ export default function Home() {
           name="description"
           content="Eric Flatt is a UX Designer currently working at Funko"
         />
-         <script
+         <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=[UA-107339411-2]"
         />
 
-        <script
+        <Script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -41,9 +40,6 @@ export default function Home() {
       </Head>
 
       <main className="mx-auto mt-16 max-w-container-small md:max-w-container-large md:mt-32">
-      <div class="container">
-        <div class="svg hide" id="svg"></div>
-        </div>
         <div className="tooltip">
           <button className="bread">🍞</button>
           

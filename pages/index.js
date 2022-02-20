@@ -8,8 +8,6 @@ import Clock from "react-live-clock";
 export default function Home() {
   useEffect(() => {
     if (document) {
-      
-     
     }
   }, []);
 
@@ -22,7 +20,7 @@ export default function Home() {
           name="description"
           content="Eric Flatt is a UX Designer currently working at Funko"
         />
-         <Script
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=[UA-107339411-2]"
         />
@@ -38,11 +36,10 @@ export default function Home() {
           }}
         />
       </Head>
-
+      {/* main section */}
       <main className="mx-auto mt-16 max-w-container-small md:max-w-container-large md:mt-32">
         <div className="tooltip">
           <button className="bread">🍞</button>
-          
           <span className="tooltiptext">
             Why the bread? Because I'm allergic
           </span>
@@ -64,34 +61,51 @@ export default function Home() {
             .{" "}
           </p>
         </div>
-
+        {/* social links */}
         <div className="social-links">
           <h1 className="text-base social-title">Find me on the internet</h1>
           <a
-            className="text-link"
             target="blank"
             href="https://twitter.com/__flatt"
+            className="content__item"
           >
-            Twitter
+            <button className="button button--narvi">
+              <span>
+                <span>Twitter</span>
+              </span>
+            </button>
           </a>
           <a
-            className="text-link"
             target="blank"
             href="https://instagram.com/eric_flatt"
+            className="content__item"
           >
-            Instagram
+            <button className="button button--narvi">
+              <span>
+                <span>Instagram</span>
+              </span>
+            </button>
           </a>
           <a
-            className="text-link"
-            target="blank"
             href="https://linkedin.com/in/ericbflatt"
+            target="blank"
+            className="content__item"
           >
-            LinkedIn
+            <button className="button button--narvi">
+              <span>
+                <span>LinkedIn</span>
+              </span>
+            </button>
           </a>
-          <a className="text-link" href="mailto:eflatt18@gmail.com">
-            Email
+          <a href="mailto:eflatt18@gmail.com" className="content__item">
+            <button className="button button--narvi">
+              <span>
+                <span>Email</span>
+              </span>
+            </button>
           </a>
         </div>
+        {/* clock feature */}
         <Clock
           className="clock"
           format={"h:mm:ss A z"}
@@ -100,9 +114,10 @@ export default function Home() {
           timezone={"US/Pacific"}
         />
       </main>
-      <div className="funko-me">
+      {/* me as funko if wanted */}
+      {/* <div className="funko-me">
         <Image className="funko-size" src={funko} alt="funko" />
-      </div>
+      </div> */}
     </div>
   );
 }

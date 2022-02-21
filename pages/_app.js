@@ -1,8 +1,39 @@
 import "./main.scss"
+import Script from "next/script"
 // import App from 'next/app'
 
+// <!-- Global site tag (gtag.js) - Google Analytics -->
+// <script async src="https://www.googletagmanager.com/gtag/js?id=G-WWM8ZJ04W4"></script>
+// <script>
+//   window.dataLayer = window.dataLayer || [];
+//   function gtag(){dataLayer.push(arguments);}
+//   gtag('js', new Date());
+
+//   gtag('config', 'G-WWM8ZJ04W4');
+// </script>
+
 function MyApp({ Component, pageProps }) {
-    return <Component {...pageProps} />
+    return (
+<>
+<Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-WWM8ZJ04W4`}
+      />
+
+      <Script strategy="lazyOnload">
+        {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-WWM8ZJ04W4', {
+              page_path: window.location.pathname,
+            });
+                `}
+      </Script>
+
+    <Component {...pageProps} />
+    </>
+    )
   }
   
   // Only uncomment this method if you have blocking data requirements for

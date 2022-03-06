@@ -16,14 +16,14 @@ body {
 
 @media (prefers-color-scheme: light) {
   body {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #15202b;
+    color: #ffffff;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #15202b;
+    background-color: #000000;
     color: #fff;
   }
 }
@@ -55,11 +55,6 @@ body {
   margin-right: auto;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 600;
-}
 
 .text-secondary {
   font-size: 1rem;
@@ -77,8 +72,20 @@ body {
   margin-right: auto;
 }
 
+
+.text-base {
+  font-size: 1.6rem;
+  line-height: 1.5rem;
+  font-weight: 900;
+}
+
 .bio {
   margin-top: 16px;
+  font-weight: 700;
+  // font-size: 1.4rem;
+  @media (min-width:800px) {
+    font-size: 1.6rem;
+  }
 }
 
 .text-link {

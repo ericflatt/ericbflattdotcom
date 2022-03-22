@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 // import Image from "next/image";
 // import Script from "next/script";
 import Clock from "react-live-clock";
+import SideNav from "./nav";
+
 
 export default function Home() {
   // useEffect(() => {
@@ -18,6 +20,9 @@ export default function Home() {
           content="Eric Flatt is a UX Designer currently working at Funko"
         />
       </Head>
+      {/* nav if wanted at somepoint */}
+      {/* <SideNav /> */}
+      {/* end nav, uncomment above */}
       {/* main section */}
       <main className="mx-auto mt-16 max-w-container-small md:max-w-container-large md:mt-32">
         {/* <div className="tooltip">
@@ -31,7 +36,7 @@ export default function Home() {
         <div>
           <p className="bio">
             I'm a product designer based in Seattle. Right now I am working on
-            the digital experience team at {" "}
+            the digital experience team at  
             <a
               target="blank"
               href="https://funko.com"

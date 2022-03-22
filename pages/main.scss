@@ -1,4 +1,4 @@
-@import 'tailwindcss/base';
+// @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
@@ -169,6 +169,7 @@ body {
 }
 
 .button {
+  color: #ffffff;
 	pointer-events: auto;
 	cursor: pointer;
 	// background: #e7e7e7;
@@ -262,3 +263,4 @@ body {
 .button--narvi:hover > span > span {
 	animation: MoveUpInitial 0.15s forwards, MoveUpEnd 0.15s forwards 0.15s;
 }
+

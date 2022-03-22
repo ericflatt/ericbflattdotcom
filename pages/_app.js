@@ -1,4 +1,5 @@
 import "./main.scss"
+import "./sideNav.scss"
 import Script from "next/script"
 // import App from 'next/app'
 

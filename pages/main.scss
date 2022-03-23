@@ -1,8 +1,8 @@
 // @import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 html {
   // cursor: url("./images/cursor.svg"), auto;
@@ -16,15 +16,25 @@ body {
 
 @media (prefers-color-scheme: light) {
   body {
-    background-color: #15202b;
-    color: #ffffff;
+    // background-color: #15202b;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    color: #111111;
+
+    .button {
+      color: #111111;
+    }
   }
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #000000;
-    color: #fff;
+    // background-color: #000000;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    color: #ffffff;
+  }
+
+  .button {
+    color: #ffffff;
   }
 }
 
@@ -46,7 +56,7 @@ body {
 
 .mt-16 {
   margin-top: 8rem;
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
     margin-top: 4rem;
   }
 }
@@ -54,7 +64,6 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 .text-secondary {
   font-size: 1rem;
@@ -72,7 +81,6 @@ body {
   margin-right: auto;
 }
 
-
 .text-base {
   font-size: 1.6rem;
   line-height: 1.5rem;
@@ -83,7 +91,7 @@ body {
   margin-top: 16px;
   font-weight: 700;
   // font-size: 1.4rem;
-  @media (min-width:800px) {
+  @media (min-width: 800px) {
     font-size: 1.6rem;
   }
 }
@@ -105,7 +113,7 @@ body {
   margin-bottom: 80px;
   a {
     margin-right: 2rem;
-    @media (max-width:768px) {
+    @media (max-width: 768px) {
       margin-right: 1rem;
     }
   }
@@ -158,109 +166,139 @@ body {
   position: absolute;
   bottom: -150px;
   right: 0;
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
     display: none;
   }
 }
 
-.clock{
+.clock {
   position: absolute;
   bottom: 16px;
 }
 
 .button {
-  color: #ffffff;
-	pointer-events: auto;
-	cursor: pointer;
-	// background: #e7e7e7;
-	border: none;
-	// padding: 24px;
-	margin: 0;
-	font-family: inherit;
-	font-size: inherit;
-	position: relative;
-	display: inline-block;
+  // color: #000000;
+  pointer-events: auto;
+  cursor: pointer;
+  // background: #e7e7e7;
+  border: none;
+  // padding: 24px;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
 }
 
 .button::before,
 .button::after {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-
-
 .button--hyperion:hover > span > span {
-	animation: MoveUpInitial 0.2s forwards, MoveUpEnd 0.2s forwards 0.2s;
+  animation: MoveUpInitial 0.2s forwards, MoveUpEnd 0.2s forwards 0.2s;
 }
 
 @keyframes MoveUpInitial {
-	to {
-		transform: translate3d(0,-105%,0);
-	}
+  to {
+    transform: translate3d(0, -105%, 0);
+  }
 }
 
 @keyframes MoveUpEnd {
-	from {
-		transform: translate3d(0,100%,0);
-	}
-	to {
-		transform: translate3d(0,0,0);
-	}
+  from {
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .button--hyperion::before {
-	content: '';
-	background: #000;
-	transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
-	transform-origin: 100% 50%;
+  content: "";
+  background: #000;
+  transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+  transform-origin: 100% 50%;
 }
 
 .button--hyperion:hover::before {
-	transform: scale3d(0,1,1);
-	transform-origin: 0% 50%;
+  transform: scale3d(0, 1, 1);
+  transform-origin: 0% 50%;
 }
 
 .button--narvi {
-	// font-weight: bold;
-	background: none;
+  // font-weight: bold;
+  background: none;
 }
 
 .button--narvi::before {
-	content: '';
-	z-index: -1;
-	// background: #e7e7e7;
-	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 85% 70%, 80% 70%, 75% 70%, 0 70%);
-	clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 85% 70%, 80% 70%, 75% 70%, 0 70%);
-	transition: clip-path 0.3s cubic-bezier(0.7, 0, 0.2, 1), -webkit-clip-path 0.3s cubic-bezier(0.7, 0, 0.2, 1), transform 0.3s ease;
+  content: "";
+  z-index: -1;
+  // background: #e7e7e7;
+  -webkit-clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 70%,
+    85% 70%,
+    80% 70%,
+    75% 70%,
+    0 70%
+  );
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 70%,
+    85% 70%,
+    80% 70%,
+    75% 70%,
+    0 70%
+  );
+  transition: clip-path 0.3s cubic-bezier(0.7, 0, 0.2, 1),
+    -webkit-clip-path 0.3s cubic-bezier(0.7, 0, 0.2, 1), transform 0.3s ease;
 }
 
 .button--narvi:hover::before {
-	transform: translate3d(0,-10px,0);
-	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 85% 70%, 86% 100%, 75% 70%, 0 70%);
-	clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 85% 70%, 86% 100%, 75% 70%, 0 70%);
+  transform: translate3d(0, -10px, 0);
+  -webkit-clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 70%,
+    85% 70%,
+    86% 100%,
+    75% 70%,
+    0 70%
+  );
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 70%,
+    85% 70%,
+    86% 100%,
+    75% 70%,
+    0 70%
+  );
 }
 
 .button--narvi span {
-	display: block;
-	position: relative;
+  display: block;
+  position: relative;
 }
 
 .button--narvi > span {
-	transition: transform 0.3s;
-	// transform: translate3d(0,-0.556rem,0);
-	z-index: 1;
-	overflow: hidden;
+  transition: transform 0.3s;
+  // transform: translate3d(0,-0.556rem,0);
+  z-index: 1;
+  overflow: hidden;
 }
 
 .button--narvi:hover > span {
-	transform: translate3d(0,-0.111rem,0);
+  transform: translate3d(0, -0.111rem, 0);
 }
 
 .button--narvi:hover > span > span {
-	animation: MoveUpInitial 0.15s forwards, MoveUpEnd 0.15s forwards 0.15s;
+  animation: MoveUpInitial 0.15s forwards, MoveUpEnd 0.15s forwards 0.15s;
 }
-

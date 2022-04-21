@@ -13,10 +13,29 @@ export default function Home() {
     <div className="container">
       <Head>
         <title>Eric Flatt</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="60x60"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
         <meta
           name="description"
-          content="Eric Flatt is a UX Designer currently working at Funko"
+          content="Eric Flatt is a UX Designer currently working on the digital experience team at Funko."
         />
       </Head>
       <main className="mx-auto mt-16 max-w-container-small md:max-w-container-large md:mt-32">

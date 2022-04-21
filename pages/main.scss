@@ -10,6 +10,11 @@ html {
   overflow: hidden;
 }
 
+a{
+  color: #111111;
+  text-decoration: none;
+}
+
 body {
   font-family: "Inter", sans-serif;
 }
@@ -177,6 +182,8 @@ body {
 }
 
 .button {
+  padding: 0;
+  padding-bottom: 8px;
   // color: #000000;
   pointer-events: auto;
   cursor: pointer;

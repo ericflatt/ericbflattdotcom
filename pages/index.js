@@ -5,7 +5,6 @@ import React, { useEffect, useState } from "react";
 import Clock from "react-live-clock";
 import SideNav from "./nav";
 
-
 export default function Home() {
   // useEffect(() => {
   // }, []);
@@ -20,45 +19,26 @@ export default function Home() {
           content="Eric Flatt is a UX Designer currently working at Funko"
         />
       </Head>
-      {/* nav if wanted at somepoint */}
-      {/* <SideNav /> */}
-      {/* end nav, uncomment above */}
-      {/* main section */}
       <main className="mx-auto mt-16 max-w-container-small md:max-w-container-large md:mt-32">
-        {/* <div className="tooltip">
-          <button className="bread">🍞</button>
-          <span className="tooltiptext">
-            Why the bread? Because I'm allergic
-          </span>
-        </div> */}
         <h1 className="text-base">Hello, my name is Eric.</h1>
         {/* <h2 className="text-secondary">Product Designer based in Seattle</h2> */}
         <div>
           <p className="bio">
             I'm a product designer based in Seattle. Right now I am working on
-            the digital experience team at  
+            the digital experience team at{" "}
             <a
               target="blank"
               href="https://funko.com"
               className="content__item"
             >
-              <button className="button button--narvi">
+              Funko
+              {/* <button className="button button--narvi">
                 <span>
                   <span style={{ fontWeight: "700" }}> Funko</span>
                 </span>
-              </button>
-            </a>.
-            {/* I'm currently a UI/UX Designer on the digital experience team at{" "}
-            <a className="text-link" href="https://funko.com" target="blank">
-              Funko
+              </button> */}
             </a>
-            . Previous experience includes design & front-end development at
-            Black Math, design & shopify development at Bobblehaus, and ux
-            design intern at iCIMS. Want to talk,{" "}
-            <a href="mailto:eflatt18@gmail.com" className="text-link">
-              get in touch
-            </a>
-            .{" "} */}
+            .
           </p>
         </div>
         {/* social links */}
@@ -114,10 +94,6 @@ export default function Home() {
           timezone={"US/Pacific"}
         />
       </main>
-      {/* me as funko if wanted */}
-      {/* <div className="funko-me">
-        <Image className="funko-size" src={funko} alt="funko" />
-      </div> */}
     </div>
   );
 }

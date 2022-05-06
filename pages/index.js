@@ -47,6 +47,10 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
         <title>Eric Flatt</title>
         <link
           rel="apple-touch-icon"

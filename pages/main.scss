@@ -325,6 +325,10 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    &:focus {
+      outline: none !important;
+      border: 2px solid darkcyan;
+    }
   }
 
   input[type="email"],
@@ -337,6 +341,10 @@ body {
     border-radius: 4px;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
+    &:focus {
+      outline: none !important;
+      border: 2px solid darkcyan;
+    }
   }
 
   button[type="submit"] {
@@ -362,5 +370,10 @@ body {
     background-color: #ffffff;
     // font-size: 16px;
     resize: none;
+
+    &:focus {
+      outline: none !important;
+      border: 2px solid darkcyan;
+    }
   }
 }

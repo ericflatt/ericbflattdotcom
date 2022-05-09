@@ -165,7 +165,7 @@ export default function Home() {
           <Fade in={open}>
             <Box sx={style}>
               <h2 style={{ marginBottom: "24px", marginTop: "0" }}>
-                Send me an Email
+                Get in touch
               </h2>
               <form
                 action="https://send.pageclip.co/SxVZDyaTbLzKRmsiCZb1GQlLBrEs4KAw"

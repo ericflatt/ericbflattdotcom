@@ -5,6 +5,7 @@ import Backdrop from "@mui/material/Backdrop";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
+import { Html } from "next/document";
 <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>;
 <link
   rel="stylesheet"
@@ -45,6 +46,7 @@ export default function Home() {
   const handleClose = () => setOpen(false);
 
   return (
+    <Html lang="en">
     <div className="container">
       <Head>
         <meta
@@ -201,5 +203,6 @@ export default function Home() {
         </Modal>
       </main>
     </div>
+    </Html>
   );
 }

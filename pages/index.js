@@ -135,7 +135,7 @@ export default function Home() {
               </span>
             </button>
           </a>
-          <a className="content__item">
+          <a className="content__item" href="#">
             <button onClick={handleOpen} className="button button--narvi">
               <span>
                 <span>Email</span>

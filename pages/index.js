@@ -83,7 +83,7 @@ export default function Home() {
         <h1 className="text-base">Hello, my name is Eric.</h1>
         {/* <h2 className="text-secondary">Product Designer based in Seattle</h2> */}
         <div>
-          <p className="bio">
+          <p className="">
             I'm a product designer based in Seattle. Right now I am working on
             the digital experience team at{" "}
             <a

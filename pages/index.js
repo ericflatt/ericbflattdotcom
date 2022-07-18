@@ -146,13 +146,13 @@ export default function Home() {
           </a>
         </div>
         {/* clock feature */}
-        <Clock
+        {/* <Clock
           className="clock"
           format={"h:mm:ss A z"}
           style={{ fontSize: "1rem" }}
           ticking={true}
           timezone={"US/Pacific"}
-        />
+        /> */}
         <Modal
           aria-labelledby="transition-modal-title"
           aria-describedby="transition-modal-description"

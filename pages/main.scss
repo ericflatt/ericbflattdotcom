@@ -32,17 +32,17 @@ body {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    // background-color: #000000;
-    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
-    color: #ffffff;
-  }
+// @media (prefers-color-scheme: dark) {
+//   body {
+//     // background-color: #000000;
+//     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+//     color: #ffffff;
+//   }
 
-  .button {
-    color: #ffffff;
-  }
-}
+//   .button {
+//     color: #ffffff;
+//   }
+// }
 
 ::selection {
   background: #ffb7b7;

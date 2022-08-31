@@ -46,7 +46,7 @@ export default function Home() {
   const handleClose = () => setOpen(false);
 
   return (
-    // <Html lang="en">
+    <Html lang="en">
     <div className="container">
       <Head>
         <meta
@@ -214,6 +214,6 @@ export default function Home() {
         </Modal>
       </main>
     </div>
-    // </Html>
+     </Html>
   );
 }

@@ -106,6 +106,17 @@ export default function Home() {
           <h1 className="text-base social-title">Find me on the internet</h1>
           <a
             target="blank"
+            href="https://portfolio.ericbflatt.com"
+            className="content__item"
+          >
+            <button className="button button--narvi">
+              <span>
+                <span>Portfolio</span>
+              </span>
+            </button>
+          </a>
+          <a
+            target="blank"
             href="https://twitter.com/__flatt"
             className="content__item"
           >

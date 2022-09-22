@@ -90,12 +90,11 @@ export default function Home() {
               href="https://funko.com"
               className="content__item"
             >
-              Funko
-              {/* <button className="button button--narvi">
+              <button className="button button--narvi">
                 <span>
-                  <span style={{ fontWeight: "700" }}> Funko</span>
+                  <span>Funko</span>
                 </span>
-              </button> */}
+              </button>
             </a>
             .
           </p>

@@ -377,3 +377,14 @@ body {
     }
   }
 }
+
+.hyperlink{
+  transition: .3s all ease;
+  &:hover{
+    transition: .3s all ease;
+    font-style: italic;
+  }
+  // border-bottom: 2px solid black;
+  // padding: 0px;
+}
+
